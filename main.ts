@@ -79,6 +79,25 @@ let resultString: string = genericFunction("Hallo Welt");
 let resultNumber: number = genericFunction(22);
 let resultArray: number[] = genericFunction([1, 2, 3]);
 
+//Destructuring
+interface Person {
+  firstName: string;
+  lastName: string;
+  age: number;
+}
+
+function printPerson({ firstName, lastName, age }: Person): void {
+  console.log(`Name: ${firstName} ${lastName}, Alter: ${age}`);
+}
+
+const person: Person = {
+  firstName: "Sara",
+  lastName: "Huber",
+  age: 23,
+};
+
+printPerson(person);
+
 //Arrow vs normal
 
 //Normal
