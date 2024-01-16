@@ -70,6 +70,15 @@ const triple = multiplier(3);
 console.log(double(5));
 console.log(triple(5));
 
+//Funktion allgemein
+function genericFunction<T>(input: T): T {
+  return input;
+}
+
+let resultString: string = genericFunction("Hallo Welt");
+let resultNumber: number = genericFunction(22);
+let resultArray: number[] = genericFunction([1, 2, 3]);
+
 //Arrow vs normal
 
 //Normal
